@@ -16,8 +16,8 @@ const push_config = {
   BARK_LEVEL: '', // bark 推送时效性
   BARK_URL: '', // bark 推送跳转URL
 
-  DD_BOT_SECRET: '', // 钉钉机器人的 DD_BOT_SECRET
-  DD_BOT_TOKEN: '', // 钉钉机器人的 DD_BOT_TOKEN
+  DD_BOT_SECRET: 'SEC373ed72f3ed1fc9e0682aa03ec7526ac72e0aeb068e5d307181693988740ed99', // 钉钉机器人的 DD_BOT_SECRET
+  DD_BOT_TOKEN: '43e3f4f92ec695583fbd1a318f11b64418d6093ca4e774a30e0b5bdff1ce2535', // 钉钉机器人的 DD_BOT_TOKEN
 
   FSKEY: '', // 飞书机器人的 FSKEY
 
