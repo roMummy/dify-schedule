@@ -8,6 +8,7 @@
  */
 // import notify from "./notify.js";
 import { WorkflowClient } from "./sdk/dify.js";
+import sendNotify from "./sendNotify.js";
 
 const $ = new Env("Dify-定时工作流");
 let tokensArr = [];
@@ -96,11 +97,11 @@ class WorkflowTask extends Task {
   }
 
   const message = messageList.join(`\n${"-".repeat(15)}\n`);
-  await notify.sendNotify("Dify定时工作流", message);
+  await sendNotify("Dify定时工作流", message);
 })()
   .catch((e) => {
     $.log("", `❌ ${$.name}, 失败! 原因: ${e}!`, "");
-    notify.sendNotify("Dify定时工作流-失败", e.message);
+    sendNotify("Dify定时工作流-失败", e.message);
   })
   .finally(() => {
     $.done();
