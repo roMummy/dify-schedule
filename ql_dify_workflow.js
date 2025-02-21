@@ -8,7 +8,7 @@
  */
 // import notify from "./notify.js";
 import { WorkflowClient } from "./sdk/dify.js";
-import sendNotify from "./sendNotify.js";
+import sendNotify from "./sendNotify1.js";
 
 const $ = new Env("Dify-定时工作流");
 let tokensArr = [];
